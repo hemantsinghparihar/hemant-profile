@@ -1,0 +1,96 @@
+.main-about{
+    margin-top: 4rem;
+}
+
+.hero-about{
+    /* border: 1px solid black; */
+    display: block;
+    padding-top: 2rem;
+    /* max-width: none; */
+    /* min-height: 100vh; */
+}
+
+.main-hero-about{
+    /* position: relative; */
+    /* border: 1px solid black; */
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero-text{
+    margin-top: .2rem;
+    margin-bottom: 0rem;
+    font-size: 15vw;
+    line-height: 1;
+    font-weight: 700;
+    text-align: left;
+}
+
+.emoji{
+    font-size: 10vw;
+}
+.desc-text p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    word-spacing: 5px;
+}
+
+.skills{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding-top: 2rem;
+    max-width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-head{
+    /* border: 1px solid black; */
+    
+    margin: 1rem 0 0 0;
+}
+
+.skill-head h1{
+    font-size: 3rem;
+    font-weight: 350;
+}
+
+.edu-container{
+    
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-bottom: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+.year h3{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-right: 20px;
+    /* flex-shrink: 0; */
+    width: 30%;
+}
+
+.edu-content{
+    /* flex-grow: 1; */
+    width: 60%;
+}
+
+.edu-content h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+  }
+
+  .edu-content p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+  }  

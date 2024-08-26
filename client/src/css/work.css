@@ -1,0 +1,46 @@
+.work-container{
+    width: 100%;
+}
+
+.main-work{
+    /* border: 1px solid black; */
+    margin-top: 4.2rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1360px;
+}
+
+.work-title{
+    /* border: 1px solid black; */
+    width: 100%;
+   
+
+}
+
+.head-style{
+    margin-top: .2rem;
+    margin-bottom: 0rem;
+    font-size: 15vw;
+    line-height: 1;
+    font-weight: 700;
+    text-align: left;
+}
+
+.work-desc h3{
+    height: 10%;
+    font-size: 2vw;
+    padding: .4rem;
+}
+
+@media screen and (max-width:400px){
+   
+
+    .work-desc {
+        /* border: 1px solid black; */
+        height: 10%;
+        font-size: 1rem;
+        padding: .4rem;
+        
+        
+    }
+}
