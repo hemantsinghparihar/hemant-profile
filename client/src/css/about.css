@@ -70,7 +70,15 @@
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
+    opacity: 0.3; /* Initial faded state */
+    transition: opacity 0.3s ease; /* Smooth transition */
 }
+
+  
+  .edu-container.focused {
+    opacity: 1; /* Fully visible when in focus */
+  }
+
 .year h3{
     font-size: 4rem;
     font-weight: bold;

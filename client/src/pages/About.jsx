@@ -15,6 +15,7 @@ function About() {
 
   const aboutRef=useRef();
   const meRef=useRef()
+  const eduContainerRefs = useRef([]); // Array to hold refs for all edu-container elements
 
     const OPTIONS = { loop: true }
 const SLIDE_COUNT = 8
@@ -43,8 +44,21 @@ useGSAP(()=>{
     opacity: 0,
     duration: 0.6,
     delay: 0.8,
-  })
-  
+  }),
+
+
+  eduContainerRefs.current.forEach((ref) => {
+    ScrollTrigger.create({
+      trigger: ref,
+      start: 'top center', // When the top of the container hits the center of the viewport
+      end: 'bottom center', // When the bottom of the container hits the center of the viewport
+      onEnter: () => ref.classList.add('focused'),
+      onLeave: () => ref.classList.remove('focused'),
+      onEnterBack: () => ref.classList.add('focused'),
+      onLeaveBack: () => ref.classList.remove('focused'),
+    });
+  });
+
 })
 
 
@@ -81,7 +95,7 @@ useGSAP(()=>{
 
       <section className='education'>
         <div className="main-edu">
-            <div className="edu-container">
+            <div className="edu-container" ref={(el) => eduContainerRefs.current[0] = el}>
                 <div className="year">
                     <h3>2023</h3>
                 </div>
@@ -91,7 +105,7 @@ useGSAP(()=>{
                 </div>
             </div>
 
-            <div className="edu-container">
+            <div className="edu-container" ref={(el) => eduContainerRefs.current[1] = el}>
                 <div className="year">
                     <h3>2020</h3>
                 </div>
