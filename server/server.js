@@ -108,7 +108,7 @@ app.get('/api/projects',(req,res)=>{
 
 
 app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/build/index.html');
+    res.sendFile(__dirname + '/dist/index.html');
   });
   
 app.listen(PORT, () => {
